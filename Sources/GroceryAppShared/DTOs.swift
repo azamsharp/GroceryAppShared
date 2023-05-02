@@ -31,7 +31,7 @@ public struct GroceryCategoryResponseDTO: Codable {
     }
 }
 
-public struct GroceryItemResponse: Codable {
+public struct GroceryItemResponseDTO: Codable {
     
     public let id: UUID
     public let title: String
