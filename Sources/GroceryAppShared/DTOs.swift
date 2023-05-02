@@ -18,10 +18,10 @@ public struct GroceryCategoryRequestDTO: Codable {
 }
 
 public struct GroceryCategoryResponseDTO: Codable {
-    let id: UUID
-    let title: String
-    let color: String
-    let noOfItems: Int
+    public let id: UUID
+    public let title: String
+    public let color: String
+    public let noOfItems: Int
     
     public init(id: UUID, title: String, color: String, noOfItems: Int) {
         self.id = id
