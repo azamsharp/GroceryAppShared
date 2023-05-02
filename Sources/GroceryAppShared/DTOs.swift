@@ -15,5 +15,11 @@ public struct GroceryCategoryRequestDTO: Codable {
         self.title = title
         self.color = color
     }
-    
+}
+
+struct GroceryCategoryResponse: Codable {
+    let id: UUID
+    let title: String
+    let color: String
+    let noOfItems: Int
 }
