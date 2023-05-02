@@ -31,6 +31,21 @@ public struct GroceryCategoryResponseDTO: Codable {
     }
 }
 
+public struct GroceryItemResponse: Codable {
+    
+    public let id: UUID
+    public let title: String
+    public let price: Double
+    public let quantity: Int
+    
+    public init(id: UUID, title: String, price: Double, quantity: Int) {
+        self.id = id
+        self.title = title
+        self.price = price
+        self.quantity = quantity
+    }
+}
+
 public struct GroceryItemRequestDTO: Codable {
     
     public let title: String
