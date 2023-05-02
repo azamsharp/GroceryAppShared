@@ -17,7 +17,7 @@ public struct GroceryCategoryRequestDTO: Codable {
     }
 }
 
-struct GroceryCategoryResponse: Codable {
+struct GroceryCategoryResponseDTO: Codable {
     let id: UUID
     let title: String
     let color: String
