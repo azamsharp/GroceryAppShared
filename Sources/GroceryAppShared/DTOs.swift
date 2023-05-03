@@ -59,7 +59,7 @@ public struct GroceryItemRequestDTO: Codable {
     }
 }
 
-public struct LoginResponse: Codable {
+public struct LoginResponseDTO: Codable {
     public let error: Bool
     public var reason: String? = nil
     public let token: String?
