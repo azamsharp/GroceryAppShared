@@ -65,7 +65,7 @@ public struct LoginResponse: Codable {
     public let token: String?
     public let userId: UUID
     
-    init(error: Bool, reason: String? = nil, token: String?, userId: UUID) {
+    public init(error: Bool, reason: String? = nil, token: String?, userId: UUID) {
         self.error = error
         self.reason = reason
         self.token = token
